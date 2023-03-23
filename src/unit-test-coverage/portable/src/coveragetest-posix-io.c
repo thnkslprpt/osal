@@ -123,8 +123,7 @@ void Test_OS_GenericRead_Impl(void)
     UT_SetDataBuffer(UT_KEY(OCS_read), SrcData, sizeof(SrcData), false);
     UT_PortablePosixIOTest_Set_Selectable(UT_INDEX_0, true);
     OSAPI_TEST_FUNCTION_RC(OS_GenericRead_Impl, (&token, DestData, sizeof(DestData), 0), sizeof(DestData));
-    // UtAssert_True(UT_GetStubCount(UT_KEY(OS_SelectSingle_Impl)) == 1, "OS_SelectSingle() called");
-    UtAssert_STUB_COUNT(OS_SelectSingle_Impl, 1);
+    UtAssert_True(UT_GetStubCount(UT_KEY(OS_SelectSingle_Impl)) == 1, "OS_SelectSingle() called");
 
     /* Read 0 bytes */
     OSAPI_TEST_FUNCTION_RC(OS_GenericRead_Impl, (&token, DestData, 0, 0), OS_SUCCESS);
@@ -165,8 +164,7 @@ void Test_OS_GenericWrite_Impl(void)
     UT_SetDataBuffer(UT_KEY(OCS_write), DestData, sizeof(DestData), false);
     UT_PortablePosixIOTest_Set_Selectable(UT_INDEX_0, true);
     OSAPI_TEST_FUNCTION_RC(OS_GenericWrite_Impl, (&token, SrcData, sizeof(SrcData), 0), sizeof(SrcData));
-    // UtAssert_True(UT_GetStubCount(UT_KEY(OS_SelectSingle_Impl)) == 1, "OS_SelectSingle() called");
-    UtAssert_STUB_COUNT(OS_SelectSingle_Impl, 1);
+    UtAssert_True(UT_GetStubCount(UT_KEY(OS_SelectSingle_Impl)) == 1, "OS_SelectSingle() called");
 
     /* Fail select */
     UT_SetDeferredRetcode(UT_KEY(OS_SelectSingle_Impl), 1, OS_ERROR_TIMEOUT);
