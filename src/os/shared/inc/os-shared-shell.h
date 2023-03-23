@@ -37,7 +37,7 @@
 
     Purpose: Takes a shell command in and writes the output of that command to the specified file
 
-    Returns: OS_SUCCESS on success, or relevant error code
+    Returns: OS_SUCCESS on success, OS_ERROR on error
  ------------------------------------------------------------------*/
 int32 OS_ShellOutputToFile_Impl(const OS_object_token_t *token, const char *Cmd);
 
