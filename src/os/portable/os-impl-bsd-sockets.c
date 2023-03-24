@@ -137,7 +137,7 @@ void OS_SetSocketDefaultFlags_Impl(const OS_object_token_t *token)
  *           See prototype for argument/return detail
  *
  *-----------------------------------------------------------------*/
-int32 OS_SocketOpen_Impl(const OS_object_token_t *token)
+OS_Status_t OS_SocketOpen_Impl(const OS_object_token_t *token)
 {
     int                             os_domain;
     int                             os_type;
@@ -214,7 +214,7 @@ int32 OS_SocketOpen_Impl(const OS_object_token_t *token)
  *           See prototype for argument/return detail
  *
  *-----------------------------------------------------------------*/
-int32 OS_SocketBind_Impl(const OS_object_token_t *token, const OS_SockAddr_t *Addr)
+OS_Status_t OS_SocketBind_Impl(const OS_object_token_t *token, const OS_SockAddr_t *Addr)
 {
     int                             os_result;
     socklen_t                       addrlen;
@@ -273,9 +273,9 @@ int32 OS_SocketBind_Impl(const OS_object_token_t *token, const OS_SockAddr_t *Ad
  *           See prototype for argument/return detail
  *
  *-----------------------------------------------------------------*/
-int32 OS_SocketConnect_Impl(const OS_object_token_t *token, const OS_SockAddr_t *Addr, int32 timeout)
+OS_Status_t OS_SocketConnect_Impl(const OS_object_token_t *token, const OS_SockAddr_t *Addr, int32 timeout)
 {
-    int32                           return_code;
+    OS_Status_t                     return_code;
     int                             os_status;
     int                             sockopt;
     socklen_t                       slen;
@@ -369,10 +369,10 @@ int32 OS_SocketConnect_Impl(const OS_object_token_t *token, const OS_SockAddr_t 
 
     Returns: OS_SUCCESS on success, or relevant error code
  ------------------------------------------------------------------*/
-int32 OS_SocketShutdown_Impl(const OS_object_token_t *token, OS_SocketShutdownMode_t Mode)
+OS_Status_t OS_SocketShutdown_Impl(const OS_object_token_t *token, OS_SocketShutdownMode_t Mode)
 {
     OS_impl_file_internal_record_t *conn_impl;
-    int32                           return_code;
+    OS_Status_t                     return_code;
     int                             how;
 
     conn_impl = OS_OBJECT_TABLE_GET(OS_impl_filehandle_table, *token);
@@ -410,10 +410,10 @@ int32 OS_SocketShutdown_Impl(const OS_object_token_t *token, OS_SocketShutdownMo
  *           See prototype for argument/return detail
  *
  *-----------------------------------------------------------------*/
-int32 OS_SocketAccept_Impl(const OS_object_token_t *sock_token, const OS_object_token_t *conn_token,
-                           OS_SockAddr_t *Addr, int32 timeout)
+OS_Status_t OS_SocketAccept_Impl(const OS_object_token_t *sock_token, const OS_object_token_t *conn_token,
+                                 OS_SockAddr_t *Addr, int32 timeout)
 {
-    int32                           return_code;
+    OS_Status_t                     return_code;
     uint32                          operation;
     socklen_t                       addrlen;
     OS_impl_file_internal_record_t *sock_impl;
@@ -464,10 +464,10 @@ int32 OS_SocketAccept_Impl(const OS_object_token_t *sock_token, const OS_object_
  *           See prototype for argument/return detail
  *
  *-----------------------------------------------------------------*/
-int32 OS_SocketRecvFrom_Impl(const OS_object_token_t *token, void *buffer, size_t buflen, OS_SockAddr_t *RemoteAddr,
-                             int32 timeout)
+OS_Status_t OS_SocketRecvFrom_Impl(const OS_object_token_t *token, void *buffer, size_t buflen,
+                                   OS_SockAddr_t *RemoteAddr, int32 timeout)
 {
-    int32                           return_code;
+    OS_Status_t                     return_code;
     int                             os_result;
     int                             waitflags;
     uint32                          operation;
@@ -554,10 +554,10 @@ int32 OS_SocketRecvFrom_Impl(const OS_object_token_t *token, void *buffer, size_
  *           See prototype for argument/return detail
  *
  *-----------------------------------------------------------------*/
-int32 OS_SocketSendTo_Impl(const OS_object_token_t *token, const void *buffer, size_t buflen,
-                           const OS_SockAddr_t *RemoteAddr)
+OS_Status_t OS_SocketSendTo_Impl(const OS_object_token_t *token, const void *buffer, size_t buflen,
+                                 const OS_SockAddr_t *RemoteAddr)
 {
-    int                             os_result;
+    OS_Status_t                     os_result;
     socklen_t                       addrlen;
     const struct sockaddr *         sa;
     OS_impl_file_internal_record_t *impl;
@@ -601,7 +601,7 @@ int32 OS_SocketSendTo_Impl(const OS_object_token_t *token, const void *buffer, s
  *           See prototype for argument/return detail
  *
  *-----------------------------------------------------------------*/
-int32 OS_SocketGetInfo_Impl(const OS_object_token_t *token, OS_socket_prop_t *sock_prop)
+OS_Status_t OS_SocketGetInfo_Impl(const OS_object_token_t *token, OS_socket_prop_t *sock_prop)
 {
     return OS_SUCCESS;
 }
@@ -612,7 +612,7 @@ int32 OS_SocketGetInfo_Impl(const OS_object_token_t *token, OS_socket_prop_t *so
  *           See prototype for argument/return detail
  *
  *-----------------------------------------------------------------*/
-int32 OS_SocketAddrInit_Impl(OS_SockAddr_t *Addr, OS_SocketDomain_t Domain)
+OS_Status_t OS_SocketAddrInit_Impl(OS_SockAddr_t *Addr, OS_SocketDomain_t Domain)
 {
     sa_family_t             sa_family;
     socklen_t               addrlen;
@@ -656,7 +656,7 @@ int32 OS_SocketAddrInit_Impl(OS_SockAddr_t *Addr, OS_SocketDomain_t Domain)
  *           See prototype for argument/return detail
  *
  *-----------------------------------------------------------------*/
-int32 OS_SocketAddrToString_Impl(char *buffer, size_t buflen, const OS_SockAddr_t *Addr)
+OS_Status_t OS_SocketAddrToString_Impl(char *buffer, size_t buflen, const OS_SockAddr_t *Addr)
 {
     const void *                  addrbuffer;
     const OS_SockAddr_Accessor_t *Accessor;
@@ -692,7 +692,7 @@ int32 OS_SocketAddrToString_Impl(char *buffer, size_t buflen, const OS_SockAddr_
  *           See prototype for argument/return detail
  *
  *-----------------------------------------------------------------*/
-int32 OS_SocketAddrFromString_Impl(OS_SockAddr_t *Addr, const char *string)
+OS_Status_t OS_SocketAddrFromString_Impl(OS_SockAddr_t *Addr, const char *string)
 {
     void *                  addrbuffer;
     OS_SockAddr_Accessor_t *Accessor;
@@ -729,7 +729,7 @@ int32 OS_SocketAddrFromString_Impl(OS_SockAddr_t *Addr, const char *string)
  *           See prototype for argument/return detail
  *
  *-----------------------------------------------------------------*/
-int32 OS_SocketAddrGetPort_Impl(uint16 *PortNum, const OS_SockAddr_t *Addr)
+OS_Status_t OS_SocketAddrGetPort_Impl(uint16 *PortNum, const OS_SockAddr_t *Addr)
 {
     in_port_t                     sa_port;
     const OS_SockAddr_Accessor_t *Accessor;
@@ -762,7 +762,7 @@ int32 OS_SocketAddrGetPort_Impl(uint16 *PortNum, const OS_SockAddr_t *Addr)
  *           See prototype for argument/return detail
  *
  *-----------------------------------------------------------------*/
-int32 OS_SocketAddrSetPort_Impl(OS_SockAddr_t *Addr, uint16 PortNum)
+OS_Status_t OS_SocketAddrSetPort_Impl(OS_SockAddr_t *Addr, uint16 PortNum)
 {
     in_port_t               sa_port;
     OS_SockAddr_Accessor_t *Accessor;

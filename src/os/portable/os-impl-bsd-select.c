@@ -69,14 +69,14 @@
  *
  * returns: Highest numbered file descriptor in the output fd_set
  *-----------------------------------------------------------------*/
-static int32 OS_FdSet_ConvertIn_Impl(int *os_maxfd, fd_set *os_set, const OS_FdSet *OSAL_set)
+static OS_Status_t OS_FdSet_ConvertIn_Impl(int *os_maxfd, fd_set *os_set, const OS_FdSet *OSAL_set)
 {
     size_t       offset;
     size_t       bit;
     osal_index_t id;
     uint8        objids;
     int          osfd;
-    int32        status;
+    OS_Status_t  status;
 
     status = OS_SUCCESS;
     for (offset = 0; offset < sizeof(OSAL_set->object_ids); ++offset)
@@ -163,10 +163,10 @@ static void OS_FdSet_ConvertOut_Impl(fd_set *OS_set, OS_FdSet *OSAL_set)
  *          Actual implementation of select() call
  *          Used by SelectSingle and SelectMultiple implementations (below)
  *-----------------------------------------------------------------*/
-static int32 OS_DoSelect(int maxfd, fd_set *rd_set, fd_set *wr_set, int32 msecs)
+static OS_Status_t OS_DoSelect(int maxfd, fd_set *rd_set, fd_set *wr_set, int32 msecs)
 {
     int             os_status;
-    int32           return_code;
+    OS_Status_t     return_code;
     struct timeval  tv;
     struct timeval *tvptr;
     struct timespec ts_now;
@@ -253,9 +253,9 @@ static int32 OS_DoSelect(int maxfd, fd_set *rd_set, fd_set *wr_set, int32 msecs)
  *           See prototype for argument/return detail
  *
  *-----------------------------------------------------------------*/
-int32 OS_SelectSingle_Impl(const OS_object_token_t *token, uint32 *SelectFlags, int32 msecs)
+OS_Status_t OS_SelectSingle_Impl(const OS_object_token_t *token, uint32 *SelectFlags, int32 msecs)
 {
-    int32                           return_code;
+    OS_Status_t                     return_code;
     fd_set                          wr_set;
     fd_set                          rd_set;
     OS_impl_file_internal_record_t *impl;
@@ -323,12 +323,12 @@ int32 OS_SelectSingle_Impl(const OS_object_token_t *token, uint32 *SelectFlags, 
  *           See prototype for argument/return detail
  *
  *-----------------------------------------------------------------*/
-int32 OS_SelectMultiple_Impl(OS_FdSet *ReadSet, OS_FdSet *WriteSet, int32 msecs)
+OS_Status_t OS_SelectMultiple_Impl(OS_FdSet *ReadSet, OS_FdSet *WriteSet, int32 msecs)
 {
     fd_set wr_set;
     fd_set rd_set;
     int    maxfd;
-    int32  return_code;
+    OS_Status_t return_code;
 
     FD_ZERO(&rd_set);
     FD_ZERO(&wr_set);
