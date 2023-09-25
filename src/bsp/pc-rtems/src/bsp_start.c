@@ -51,7 +51,7 @@
 #include "pcrtems_bsp_internal.h"
 
 /*
-**  External Declarations
+**  External Declaration
 */
 extern rtems_status_code rtems_ide_part_table_initialize(const char *);
 extern int               rtems_rtl_shell_command(int argc, char *argv[]);
