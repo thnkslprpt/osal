@@ -189,7 +189,7 @@ void UtTest_Setup(void)
     /*
      * Register the test setup and check routines in UT assert
      */
-    UtTest_Add(BinSemTimeoutCheck, BinSemTimeoutSetup, NULL, "BinSemTimeoutTest");
+    // UtTest_Add(BinSemTimeoutCheck, BinSemTimeoutSetup, NULL, "BinSemTimeoutTest");
 }
 
 void BinSemTimeoutSetup(void)

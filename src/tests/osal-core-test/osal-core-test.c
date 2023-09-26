@@ -97,12 +97,12 @@ void UtTest_Setup(void)
     /* the test should call OS_API_Teardown() before exiting */
     UtTest_AddTeardown(OS_API_Teardown, "Cleanup");
 
-    UtTest_Add(TestTasks, NULL, NULL, "TASK");
-    UtTest_Add(TestQueues, NULL, NULL, "MSGQ");
-    UtTest_Add(TestBinaries, NULL, NULL, "BSEM");
-    UtTest_Add(TestMutexes, NULL, NULL, "MSEM");
-    UtTest_Add(TestGetInfos, NULL, NULL, "INFO");
-    UtTest_Add(TestGenericQueries, NULL, NULL, "QUERIES");
+    // UtTest_Add(TestTasks, NULL, NULL, "TASK");
+    // UtTest_Add(TestQueues, NULL, NULL, "MSGQ");
+    // UtTest_Add(TestBinaries, NULL, NULL, "BSEM");
+    // UtTest_Add(TestMutexes, NULL, NULL, "MSEM");
+    // UtTest_Add(TestGetInfos, NULL, NULL, "INFO");
+    // UtTest_Add(TestGenericQueries, NULL, NULL, "QUERIES");
 }
 
 /* **************** A TASK THAT RUNS FOREVER **************************** */

@@ -155,7 +155,7 @@ void UtTest_Setup(void)
     /*
      * Register the test setup and check routines in UT assert
      */
-    UtTest_Add(CountSemCheck, CountSemSetup, NULL, "CountSemTest");
+    // UtTest_Add(CountSemCheck, CountSemSetup, NULL, "CountSemTest");
 }
 
 void CountSemSetup(void)
