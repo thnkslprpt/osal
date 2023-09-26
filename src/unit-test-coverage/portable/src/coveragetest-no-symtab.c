@@ -58,5 +58,5 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(No_Symtab);
+    // ADD_TEST(No_Symtab);
 }

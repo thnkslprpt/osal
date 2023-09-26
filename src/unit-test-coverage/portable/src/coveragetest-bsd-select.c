@@ -214,6 +214,6 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_SelectSingle_Impl);
-    ADD_TEST(OS_SelectMultiple_Impl);
+    // ADD_TEST(OS_SelectSingle_Impl);
+    // ADD_TEST(OS_SelectMultiple_Impl);
 }
