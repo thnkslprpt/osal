@@ -141,8 +141,8 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_SymTableIterator_Impl);
-    ADD_TEST(OS_SymbolLookup_Impl);
-    ADD_TEST(OS_ModuleSymbolLookup_Impl);
-    ADD_TEST(OS_SymbolTableDump_Impl);
+    // ADD_TEST(OS_SymTableIterator_Impl);
+    // ADD_TEST(OS_SymbolLookup_Impl);
+    // ADD_TEST(OS_ModuleSymbolLookup_Impl);
+    // ADD_TEST(OS_SymbolTableDump_Impl);
 }

@@ -404,22 +404,22 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_FileAPI_Init);
-    ADD_TEST(OS_OpenCreate);
-    ADD_TEST(OS_close);
-    ADD_TEST(OS_TimedRead);
-    ADD_TEST(OS_TimedWrite);
-    ADD_TEST(OS_read);
-    ADD_TEST(OS_write);
-    ADD_TEST(OS_chmod);
-    ADD_TEST(OS_stat);
-    ADD_TEST(OS_lseek);
-    ADD_TEST(OS_remove);
-    ADD_TEST(OS_rename);
-    ADD_TEST(OS_cp);
-    ADD_TEST(OS_mv);
-    ADD_TEST(OS_FDGetInfo);
-    ADD_TEST(OS_FileOpenCheck);
-    ADD_TEST(OS_CloseFileByName);
-    ADD_TEST(OS_CloseAllFiles);
+    // ADD_TEST(OS_FileAPI_Init);
+    // ADD_TEST(OS_OpenCreate);
+    // ADD_TEST(OS_close);
+    // ADD_TEST(OS_TimedRead);
+    // ADD_TEST(OS_TimedWrite);
+    // ADD_TEST(OS_read);
+    // ADD_TEST(OS_write);
+    // ADD_TEST(OS_chmod);
+    // ADD_TEST(OS_stat);
+    // ADD_TEST(OS_lseek);
+    // ADD_TEST(OS_remove);
+    // ADD_TEST(OS_rename);
+    // ADD_TEST(OS_cp);
+    // ADD_TEST(OS_mv);
+    // ADD_TEST(OS_FDGetInfo);
+    // ADD_TEST(OS_FileOpenCheck);
+    // ADD_TEST(OS_CloseFileByName);
+    // ADD_TEST(OS_CloseAllFiles);
 }

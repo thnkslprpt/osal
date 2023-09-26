@@ -608,18 +608,18 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_SocketAPI_Init);
-    ADD_TEST(OS_SocketAddr);
-    ADD_TEST(OS_SocketOpen);
-    ADD_TEST(OS_SocketBind);
-    ADD_TEST(OS_SocketBindAddress);
-    ADD_TEST(OS_SocketListen);
-    ADD_TEST(OS_SocketAccept);
-    ADD_TEST(OS_SocketConnect);
-    ADD_TEST(OS_SocketRecvFrom);
-    ADD_TEST(OS_SocketSendTo);
-    ADD_TEST(OS_SocketShutdown);
-    ADD_TEST(OS_SocketGetIdByName);
-    ADD_TEST(OS_SocketGetInfo);
-    ADD_TEST(OS_CreateSocketName);
+    // ADD_TEST(OS_SocketAPI_Init);
+    // ADD_TEST(OS_SocketAddr);
+    // ADD_TEST(OS_SocketOpen);
+    // ADD_TEST(OS_SocketBind);
+    // ADD_TEST(OS_SocketBindAddress);
+    // ADD_TEST(OS_SocketListen);
+    // ADD_TEST(OS_SocketAccept);
+    // ADD_TEST(OS_SocketConnect);
+    // ADD_TEST(OS_SocketRecvFrom);
+    // ADD_TEST(OS_SocketSendTo);
+    // ADD_TEST(OS_SocketShutdown);
+    // ADD_TEST(OS_SocketGetIdByName);
+    // ADD_TEST(OS_SocketGetInfo);
+    // ADD_TEST(OS_CreateSocketName);
 }

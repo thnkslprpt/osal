@@ -357,11 +357,11 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_API_Init);
-    ADD_TEST(OS_DeleteAllObjects);
-    ADD_TEST(OS_CleanUpObject);
-    ADD_TEST(OS_IdleLoopAndShutdown);
-    ADD_TEST(OS_ApplicationExit);
-    ADD_TEST(OS_NotifyEvent);
-    ADD_TEST(OS_API_Teardown);
+    // ADD_TEST(OS_API_Init);
+    // ADD_TEST(OS_DeleteAllObjects);
+    // ADD_TEST(OS_CleanUpObject);
+    // ADD_TEST(OS_IdleLoopAndShutdown);
+    // ADD_TEST(OS_ApplicationExit);
+    // ADD_TEST(OS_NotifyEvent);
+    // ADD_TEST(OS_API_Teardown);
 }

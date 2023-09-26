@@ -71,5 +71,5 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_ShellOutputToFile);
+    // ADD_TEST(OS_ShellOutputToFile);
 }

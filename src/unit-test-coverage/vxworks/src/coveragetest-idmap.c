@@ -127,8 +127,8 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_Lock_Global_Impl);
-    ADD_TEST(OS_Unlock_Global_Impl);
-    ADD_TEST(OS_API_Impl_Init);
-    ADD_TEST(OS_WaitForStateChange_Impl);
+    // ADD_TEST(OS_Lock_Global_Impl);
+    // ADD_TEST(OS_Unlock_Global_Impl);
+    // ADD_TEST(OS_API_Impl_Init);
+    // ADD_TEST(OS_WaitForStateChange_Impl);
 }

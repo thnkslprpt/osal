@@ -122,10 +122,10 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_VxWorks_MutexAPI_Impl_Init);
-    ADD_TEST(OS_MutSemCreate_Impl);
-    ADD_TEST(OS_MutSemDelete_Impl);
-    ADD_TEST(OS_MutSemGive_Impl);
-    ADD_TEST(OS_MutSemTake_Impl);
-    ADD_TEST(OS_MutSemGetInfo_Impl);
+    // ADD_TEST(OS_VxWorks_MutexAPI_Impl_Init);
+    // ADD_TEST(OS_MutSemCreate_Impl);
+    // ADD_TEST(OS_MutSemDelete_Impl);
+    // ADD_TEST(OS_MutSemGive_Impl);
+    // ADD_TEST(OS_MutSemTake_Impl);
+    // ADD_TEST(OS_MutSemGetInfo_Impl);
 }

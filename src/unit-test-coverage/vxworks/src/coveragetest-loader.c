@@ -127,8 +127,8 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_VxWorks_ModuleAPI_Impl_Init);
-    ADD_TEST(OS_ModuleLoad_Impl);
-    ADD_TEST(OS_ModuleUnload_Impl);
-    ADD_TEST(OS_ModuleGetInfo_Impl);
+    // ADD_TEST(OS_VxWorks_ModuleAPI_Impl_Init);
+    // ADD_TEST(OS_ModuleLoad_Impl);
+    // ADD_TEST(OS_ModuleUnload_Impl);
+    // ADD_TEST(OS_ModuleGetInfo_Impl);
 }

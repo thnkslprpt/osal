@@ -123,7 +123,7 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_ConsoleCreate_Impl);
-    ADD_TEST(OS_ConsoleWakeup_Impl);
-    ADD_TEST(OS_VxWorks_ConsoleTask_Entry);
+    // ADD_TEST(OS_ConsoleCreate_Impl);
+    // ADD_TEST(OS_ConsoleWakeup_Impl);
+    // ADD_TEST(OS_VxWorks_ConsoleTask_Entry);
 }

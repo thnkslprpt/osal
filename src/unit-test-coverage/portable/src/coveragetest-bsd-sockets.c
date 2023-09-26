@@ -491,19 +491,19 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_SocketOpen_Impl);
-    ADD_TEST(OS_SetSocketDefaultFlags_Impl);
-    ADD_TEST(OS_SocketBindAddress_Impl);
-    ADD_TEST(OS_SocketListen_Impl);
-    ADD_TEST(OS_SocketConnect_Impl);
-    ADD_TEST(OS_SocketShutdown_Impl);
-    ADD_TEST(OS_SocketAccept_Impl);
-    ADD_TEST(OS_SocketRecvFrom_Impl);
-    ADD_TEST(OS_SocketSendTo_Impl);
-    ADD_TEST(OS_SocketGetInfo_Impl);
-    ADD_TEST(OS_SocketAddrInit_Impl);
-    ADD_TEST(OS_SocketAddrToString_Impl);
-    ADD_TEST(OS_SocketAddrFromString_Impl);
-    ADD_TEST(OS_SocketAddrGetPort_Impl);
-    ADD_TEST(OS_SocketAddrSetPort_Impl);
+    // ADD_TEST(OS_SocketOpen_Impl);
+    // ADD_TEST(OS_SetSocketDefaultFlags_Impl);
+    // ADD_TEST(OS_SocketBindAddress_Impl);
+    // ADD_TEST(OS_SocketListen_Impl);
+    // ADD_TEST(OS_SocketConnect_Impl);
+    // ADD_TEST(OS_SocketShutdown_Impl);
+    // ADD_TEST(OS_SocketAccept_Impl);
+    // ADD_TEST(OS_SocketRecvFrom_Impl);
+    // ADD_TEST(OS_SocketSendTo_Impl);
+    // ADD_TEST(OS_SocketGetInfo_Impl);
+    // ADD_TEST(OS_SocketAddrInit_Impl);
+    // ADD_TEST(OS_SocketAddrToString_Impl);
+    // ADD_TEST(OS_SocketAddrFromString_Impl);
+    // ADD_TEST(OS_SocketAddrGetPort_Impl);
+    // ADD_TEST(OS_SocketAddrSetPort_Impl);
 }

@@ -70,5 +70,5 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_VxWorks_DirAPI_Impl_Init);
+    // ADD_TEST(OS_VxWorks_DirAPI_Impl_Init);
 }

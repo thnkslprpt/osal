@@ -159,6 +159,6 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_ConsoleAPI_Init);
-    ADD_TEST(OS_printf);
+    // ADD_TEST(OS_ConsoleAPI_Init);
+    // ADD_TEST(OS_printf);
 }

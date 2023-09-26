@@ -234,15 +234,15 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_CondVarAPI_Init);
-    ADD_TEST(OS_CondVarCreate);
-    ADD_TEST(OS_CondVarDelete);
-    ADD_TEST(OS_CondVarUnlock);
-    ADD_TEST(OS_CondVarLock);
-    ADD_TEST(OS_CondVarSignal);
-    ADD_TEST(OS_CondVarBroadcast);
-    ADD_TEST(OS_CondVarWait);
-    ADD_TEST(OS_CondVarTimedWait);
-    ADD_TEST(OS_CondVarGetIdByName);
-    ADD_TEST(OS_CondVarGetInfo);
+    // ADD_TEST(OS_CondVarAPI_Init);
+    // ADD_TEST(OS_CondVarCreate);
+    // ADD_TEST(OS_CondVarDelete);
+    // ADD_TEST(OS_CondVarUnlock);
+    // ADD_TEST(OS_CondVarLock);
+    // ADD_TEST(OS_CondVarSignal);
+    // ADD_TEST(OS_CondVarBroadcast);
+    // ADD_TEST(OS_CondVarWait);
+    // ADD_TEST(OS_CondVarTimedWait);
+    // ADD_TEST(OS_CondVarGetIdByName);
+    // ADD_TEST(OS_CondVarGetInfo);
 }

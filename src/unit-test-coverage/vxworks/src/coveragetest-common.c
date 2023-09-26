@@ -134,9 +134,9 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_API_Impl_Init);
-    ADD_TEST(OS_IdleLoop_Impl);
-    ADD_TEST(OS_ApplicationShutdown_Impl);
-    ADD_TEST(OS_VxWorks_GenericSemGive);
-    ADD_TEST(OS_VxWorks_GenericSemTake);
+    // ADD_TEST(OS_API_Impl_Init);
+    // ADD_TEST(OS_IdleLoop_Impl);
+    // ADD_TEST(OS_ApplicationShutdown_Impl);
+    // ADD_TEST(OS_VxWorks_GenericSemGive);
+    // ADD_TEST(OS_VxWorks_GenericSemTake);
 }

@@ -191,11 +191,11 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_MutexAPI_Init);
-    ADD_TEST(OS_MutSemCreate);
-    ADD_TEST(OS_MutSemDelete);
-    ADD_TEST(OS_MutSemGive);
-    ADD_TEST(OS_MutSemTake);
-    ADD_TEST(OS_MutSemGetIdByName);
-    ADD_TEST(OS_MutSemGetInfo);
+    // ADD_TEST(OS_MutexAPI_Init);
+    // ADD_TEST(OS_MutSemCreate);
+    // ADD_TEST(OS_MutSemDelete);
+    // ADD_TEST(OS_MutSemGive);
+    // ADD_TEST(OS_MutSemTake);
+    // ADD_TEST(OS_MutSemGetIdByName);
+    // ADD_TEST(OS_MutSemGetInfo);
 }

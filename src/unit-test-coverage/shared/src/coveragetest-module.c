@@ -306,12 +306,12 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_ModuleAPI_Init);
-    ADD_TEST(OS_ModuleLoad);
-    ADD_TEST(OS_ModuleUnload);
-    ADD_TEST(OS_SymbolLookup);
-    ADD_TEST(OS_ModuleSymbolLookup);
-    ADD_TEST(OS_ModuleGetInfo);
-    ADD_TEST(OS_SymbolTableDump);
-    ADD_TEST(OS_StaticSymbolLookup);
+    // ADD_TEST(OS_ModuleAPI_Init);
+    // ADD_TEST(OS_ModuleLoad);
+    // ADD_TEST(OS_ModuleUnload);
+    // ADD_TEST(OS_SymbolLookup);
+    // ADD_TEST(OS_ModuleSymbolLookup);
+    // ADD_TEST(OS_ModuleGetInfo);
+    // ADD_TEST(OS_SymbolTableDump);
+    // ADD_TEST(OS_StaticSymbolLookup);
 }

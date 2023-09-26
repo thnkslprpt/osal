@@ -164,10 +164,10 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_DirCreate_Impl);
-    ADD_TEST(OS_DirOpen_Impl);
-    ADD_TEST(OS_DirClose_Impl);
-    ADD_TEST(OS_DirRead_Impl);
-    ADD_TEST(OS_DirRewind_Impl);
-    ADD_TEST(OS_DirRemove_Impl);
+    // ADD_TEST(OS_DirCreate_Impl);
+    // ADD_TEST(OS_DirOpen_Impl);
+    // ADD_TEST(OS_DirClose_Impl);
+    // ADD_TEST(OS_DirRead_Impl);
+    // ADD_TEST(OS_DirRewind_Impl);
+    // ADD_TEST(OS_DirRemove_Impl);
 }

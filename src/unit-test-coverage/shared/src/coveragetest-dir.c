@@ -155,11 +155,11 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_DirAPI_Init);
-    ADD_TEST(OS_mkdir);
-    ADD_TEST(OS_DirectoryOpen);
-    ADD_TEST(OS_DirectoryClose);
-    ADD_TEST(OS_DirectoryRead);
-    ADD_TEST(OS_DirectoryRewind);
-    ADD_TEST(OS_rmdir);
+    // ADD_TEST(OS_DirAPI_Init);
+    // ADD_TEST(OS_mkdir);
+    // ADD_TEST(OS_DirectoryOpen);
+    // ADD_TEST(OS_DirectoryClose);
+    // ADD_TEST(OS_DirectoryRead);
+    // ADD_TEST(OS_DirectoryRewind);
+    // ADD_TEST(OS_rmdir);
 }

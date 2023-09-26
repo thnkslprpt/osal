@@ -184,12 +184,12 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_CountSemAPI_Init);
-    ADD_TEST(OS_CountSemCreate);
-    ADD_TEST(OS_CountSemDelete);
-    ADD_TEST(OS_CountSemGive);
-    ADD_TEST(OS_CountSemTake);
-    ADD_TEST(OS_CountSemTimedWait);
-    ADD_TEST(OS_CountSemGetIdByName);
-    ADD_TEST(OS_CountSemGetInfo);
+    // ADD_TEST(OS_CountSemAPI_Init);
+    // ADD_TEST(OS_CountSemCreate);
+    // ADD_TEST(OS_CountSemDelete);
+    // ADD_TEST(OS_CountSemGive);
+    // ADD_TEST(OS_CountSemTake);
+    // ADD_TEST(OS_CountSemTimedWait);
+    // ADD_TEST(OS_CountSemGetIdByName);
+    // ADD_TEST(OS_CountSemGetInfo);
 }

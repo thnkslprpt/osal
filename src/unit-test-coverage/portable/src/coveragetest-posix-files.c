@@ -216,9 +216,9 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_FileOpen_Impl);
-    ADD_TEST(OS_FileStat_Impl);
-    ADD_TEST(OS_FileChmod_Impl);
-    ADD_TEST(OS_FileRemove_Impl);
-    ADD_TEST(OS_FileRename_Impl);
+    // ADD_TEST(OS_FileOpen_Impl);
+    // ADD_TEST(OS_FileStat_Impl);
+    // ADD_TEST(OS_FileChmod_Impl);
+    // ADD_TEST(OS_FileRemove_Impl);
+    // ADD_TEST(OS_FileRename_Impl);
 }

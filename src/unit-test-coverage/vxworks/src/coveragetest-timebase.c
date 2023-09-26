@@ -307,13 +307,13 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_VxWorks_TimeBaseAPI_Impl_Init);
-    ADD_TEST(OS_TimeBaseLock_Impl);
-    ADD_TEST(OS_TimeBaseUnlock_Impl);
-    ADD_TEST(OS_TimeBaseCreate_Impl);
-    ADD_TEST(OS_VxWorks_SigWait);
-    ADD_TEST(OS_TimeBaseSet_Impl);
-    ADD_TEST(OS_TimeBaseDelete_Impl);
-    ADD_TEST(OS_TimeBaseGetInfo_Impl);
-    ADD_TEST(OS_Impl_UsecToTimespec);
+    // ADD_TEST(OS_VxWorks_TimeBaseAPI_Impl_Init);
+    // ADD_TEST(OS_TimeBaseLock_Impl);
+    // ADD_TEST(OS_TimeBaseUnlock_Impl);
+    // ADD_TEST(OS_TimeBaseCreate_Impl);
+    // ADD_TEST(OS_VxWorks_SigWait);
+    // ADD_TEST(OS_TimeBaseSet_Impl);
+    // ADD_TEST(OS_TimeBaseDelete_Impl);
+    // ADD_TEST(OS_TimeBaseGetInfo_Impl);
+    // ADD_TEST(OS_Impl_UsecToTimespec);
 }

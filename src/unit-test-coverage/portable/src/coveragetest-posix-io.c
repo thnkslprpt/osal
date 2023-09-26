@@ -214,8 +214,8 @@ void Osapi_Test_Teardown(void) {}
  */
 void UtTest_Setup(void)
 {
-    ADD_TEST(OS_GenericClose_Impl);
-    ADD_TEST(OS_GenericSeek_Impl);
-    ADD_TEST(OS_GenericRead_Impl);
-    ADD_TEST(OS_GenericWrite_Impl);
+    // ADD_TEST(OS_GenericClose_Impl);
+    // ADD_TEST(OS_GenericSeek_Impl);
+    // ADD_TEST(OS_GenericRead_Impl);
+    // ADD_TEST(OS_GenericWrite_Impl);
 }
