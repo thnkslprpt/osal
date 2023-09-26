@@ -65,23 +65,6 @@ add_library(ut_libc_stubs STATIC EXCLUDE_FROM_ALL
     src/posix-unistd-stubs.c
     src/sys-socket-stubs.c
     src/sys-select-stubs.c
-    src/vxworks-ataDrv-stubs.c
-    src/vxworks-dosFsLib-stubs.c
-    src/vxworks-errnoLib-stubs.c
-    src/vxworks-hostLib-stubs.c
-    src/vxworks-intLib-stubs.c
-    src/vxworks-loadLib-stubs.c
-    src/vxworks-memPartLib-stubs.c
-    src/vxworks-moduleLib-stubs.c
-    src/vxworks-msgQLib-stubs.c
-    src/vxworks-ramDrv-stubs.c
-    src/vxworks-semLib-stubs.c
-    src/vxworks-shellLib-stubs.c
-    src/vxworks-symLib-stubs.c
-    src/vxworks-sysLib-stubs.c
-    src/vxworks-taskLib-stubs.c
-    src/vxworks-taskVarLib-stubs.c
-    src/vxworks-xbdBlkDev-stubs.c
 )
 
 target_link_libraries(ut_libc_stubs PUBLIC

@@ -3,28 +3,7 @@
 # A list of modules in the shared OSAL implementation.
 # Each entry corresponds to a source file name osapi-${MODULE}.c
 set(MODULE_LIST
-    binsem
-    clock
-    common
-    condvar
-    countsem
-    dir
-    errors
-    file
-    filesys
-    heap
-    idmap
     module
-    mutex
-    network
-    printf
-    queue
-    select
-    sockets
-    task
-    timebase
-    time
-    version
 )
 
 set(SHARED_COVERAGE_LINK_LIST
