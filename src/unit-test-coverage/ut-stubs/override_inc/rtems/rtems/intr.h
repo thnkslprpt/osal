@@ -1,7 +1,3 @@
-
-
-
-
 /************************************************************************
  * NASA Docket No. GSC-18,719-1, and identified as “core Flight System: Bootes”
  *
@@ -20,31 +16,10 @@
  * limitations under the License.
  ************************************************************************/
 
-/**
- * \file
- * \ingroup ut-stubs
- *
- * OSAL coverage stub replacement for unldLib.h
- */
+/* PSP coverage stub replacement for rtems_bsdnet.h */
+#ifndef OVERRIDE_INTR_H
+#define OVERRIDE_INTR_H
 
-#ifndef OCS_UNLDLIB_H
-#define OCS_UNLDLIB_H
 
-#include "OCS_basetypes.h"
-#include "OCS_vxWorks.h"
-#include "OCS_moduleLib.h"
 
-/* ----------------------------------------- */
-/* constants normally defined in unldLib.h */
-/* ----------------------------------------- */
-
-/* ----------------------------------------- */
-/* types normally defined in unldLib.h */
-/* ----------------------------------------- */
-
-/* ----------------------------------------- */
-/* prototypes normally declared in unldLib.h */
-/* ----------------------------------------- */
-extern OCS_STATUS OCS_unldByModuleId(OCS_MODULE_ID moduleId, int options);
-
-#endif /* OCS_UNLDLIB_H */
+#endif

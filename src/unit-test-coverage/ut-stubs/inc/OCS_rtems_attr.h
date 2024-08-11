@@ -1,0 +1,7 @@
+#ifndef OCS_RTEMS_ATTR_H
+#define OCS_RTEMS_ATTR_H
+
+#define OCS_RTEMS_SIMPLE_BINARY_SEMAPHORE 0x00000020
+#define OCS_RTEMS_PRIORITY                0x00000004
+
+#endif

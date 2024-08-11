@@ -82,6 +82,9 @@ add_library(ut_libc_stubs STATIC EXCLUDE_FROM_ALL
     src/vxworks-taskLib-stubs.c
     src/vxworks-taskVarLib-stubs.c
     src/vxworks-xbdBlkDev-stubs.c
+    # src/rtems-malloc-stubs.c
+    src/rtems-sem-stubs.c
+    src/rtems-status-stubs.c
 )
 
 target_link_libraries(ut_libc_stubs PUBLIC
